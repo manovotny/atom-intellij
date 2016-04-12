@@ -1,0 +1,111 @@
+{
+  "name": "expand-region",
+  "main": "./lib/main",
+  "version": "0.2.4",
+  "description": "expanding selection",
+  "keywords": [
+    "selection"
+  ],
+  "activationCommands": {
+    "atom-text-editor": [
+      "expand-region:expand",
+      "expand-region:shrink",
+      "expand-region:select-scope",
+      "expand-region:select-fold",
+      "expand-region:select-word-include-dash",
+      "expand-region:select-word-include-dash-and-dot",
+      "expand-region:select-inside-paragraph",
+      "expand-region:select-inside-single-quotes",
+      "expand-region:select-inside-double-quotes",
+      "expand-region:select-inside-back-ticks",
+      "expand-region:select-inside-parentheses",
+      "expand-region:select-inside-curly-brackets",
+      "expand-region:select-inside-angle-brackets",
+      "expand-region:select-inside-square-brackets",
+      "expand-region:select-inside-tags",
+      "expand-region:select-around-single-quotes",
+      "expand-region:select-around-double-quotes",
+      "expand-region:select-around-back-ticks",
+      "expand-region:select-around-parentheses",
+      "expand-region:select-around-curly-brackets",
+      "expand-region:select-around-angle-brackets",
+      "expand-region:select-around-square-brackets"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aki77/atom-expand-region.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+    "underscore-plus": "~1.6.6"
+  },
+  "readme": "# expand-region package\n\nexpanding selection\n[![Build Status](https://travis-ci.org/aki77/atom-expand-region.svg)](https://travis-ci.org/aki77/atom-expand-region)\n\n[![Gyazo](http://i.gyazo.com/345e05e29cc1e6e1d103f49d50c52b01.gif)](http://gyazo.com/345e05e29cc1e6e1d103f49d50c52b01)\n\nInspired by [vim-expand-region](https://github.com/terryma/vim-expand-region)\n\n## Features\n\n* Support for multiple cursors.\n* You can easily customize.\n\n## Keymap\n\nNo keymap by default.\n\nedit `~/.atom/keymap.cson`\n\n```\n'atom-text-editor':\n  'alt-up': 'expand-region:expand'\n  'alt-down': 'expand-region:shrink'\n```\n\n## Customize selected regions\n\nFollow [the Atom guide](https://atom.io/docs/latest/using-atom-basic-customization#language-specific-settings-in-your-config-file) on language-specific configuration to adjust how regions are selected per language. Edit `~/.atom/config.cson` and use the [default settings](https://github.com/aki77/atom-expand-region/blob/master/settings/expand-region.cson) as a reference.\n\nFor example, if you want to select words with dashes first in CSS (instead of words without dashes), you could change your `config.cson` to something like:\n\n```cson\n'.source.css':\n  'expand-region':\n    commands: [\n      # Note how `expand-region:select-word` is no longer here \n      # like it is in the defaults\n      {\n        command: 'expand-region:select-word-include-dash',\n        recursive: false\n      }\n      # etc...\n    ]\n```\n\nAnd now if you expanded while your cursor was—for example—between `x` and `t` in `text-align`, rather than selecting `text` first, you'd select the whole `text-align` property.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/aki77/atom-expand-region/issues"
+  },
+  "homepage": "https://github.com/aki77/atom-expand-region#readme",
+  "_id": "expand-region@0.2.4",
+  "_shasum": "5968d61617d6156b397d68375b54df1d7fa6c689",
+  "_resolved": "file:../d-116312-39596-1dyeulh/package.tgz",
+  "_from": "../d-116312-39596-1dyeulh/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "underscore-plus",
+        "version": "1.6.6",
+        "path": "node_modules/underscore-plus/lib/underscore-plus.js"
+      },
+      {
+        "name": "underscore",
+        "version": "1.6.0",
+        "path": "node_modules/underscore-plus/node_modules/underscore/underscore.js"
+      }
+    ],
+    "extensions": {
+      ".json": [
+        "coffeelint.json",
+        "node_modules/underscore-plus/node_modules/underscore/package.json",
+        "node_modules/underscore-plus/package.json",
+        "package.json"
+      ],
+      ".coffee": [
+        "lib/expand-region.coffee",
+        "lib/main.coffee",
+        "lib/selector.coffee"
+      ],
+      ".js": [
+        "node_modules/underscore-plus/lib/underscore-plus.js",
+        "node_modules/underscore-plus/node_modules/underscore/underscore-min.js",
+        "node_modules/underscore-plus/node_modules/underscore/underscore.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "",
+          "lib",
+          "spec",
+          "spec/fixtures"
+        ],
+        "dependencies": {
+          "underscore-plus": "~1.6.6"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/underscore-plus/lib",
+          "node_modules/underscore-plus"
+        ],
+        "dependencies": {
+          "underscore": "~1.6.0"
+        }
+      }
+    ]
+  }
+}

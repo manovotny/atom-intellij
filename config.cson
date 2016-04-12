@@ -1,0 +1,41 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "8d45b938-1ff1-47b8-9987-a38b0b2f2041"
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  autosave:
+    enabled: true
+  core:
+    followSymlinks: true
+    ignoredNames: [
+      ".git"
+      ".DS_Store"
+      ".idea"
+      ".com*"
+      ".localized"
+      "Thumbs.db"
+      "target"
+      "*.log"
+      "*.iml"
+      "*.log.1"
+      "mocks"
+      "embeddeddb*"
+      "generated-sources"
+      "tags"
+      ".tags_swap"
+      "node_modules"
+      "velocity.log*"
+    ]
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "02efdf46-14e2-0289-929d-ee286d85aeab"
+  tabs:
+    enableVcsColoring: true
+  "tabs-to-spaces": {}
+  welcome:
+    showOnStartup: false
