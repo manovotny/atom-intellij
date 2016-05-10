@@ -18,6 +18,8 @@ An Atom configuration, which makes it act and function more like IntelliJ.
 * Close Tab: `⌘F4`
 * Go To Line: `⌘G`
 * Correct Spelling: `⌥⏎`
+* Find Next: `F3`
+* Find Previous: `⇧F3`
 
 ## Bundled Packages
 

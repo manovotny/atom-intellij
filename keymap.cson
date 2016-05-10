@@ -51,6 +51,8 @@
 
 '.platform-darwin atom-text-editor':
     'alt-enter': 'spell-check:correct-misspelling'
+    'f3': 'find-and-replace:find-next'
+    'shift-f3': 'find-and-replace:find-previous'
 
 'atom-workspace atom-text-editor:not([mini])':
     'alt-enter': 'spell-check:correct-misspelling'
