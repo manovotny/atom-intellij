@@ -20,6 +20,7 @@ An Atom configuration, which makes it act and function more like IntelliJ.
 * Correct Spelling: `⌥⏎`
 * Find Next: `F3`
 * Find Previous: `⇧F3`
+* Split Pane: `^⌥⌘V`
 
 ## Bundled Packages
 

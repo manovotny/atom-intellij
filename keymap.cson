@@ -40,10 +40,11 @@
     'cmd-shift-up': 'editor:move-line-up'
 
 '.platform-darwin atom-workspace':
-  'alt-f12': 'terminal-plus:toggle'
+    'alt-f12': 'terminal-plus:toggle'
 
 'body':
     'cmd-f4': 'core:close'
+    'ctrl-alt-cmd-v': 'pane:split-right-and-copy-active-item'
 
 '.platform-darwin .editor':
     'cmd-g': 'go-to-line:toggle'
